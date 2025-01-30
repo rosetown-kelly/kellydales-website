@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Kelly Dales – Campaigns and Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevents scrolling */
+            font-family: 'Roboto', sans-serif; /* Modern Sans-Serif font */
+        }
+        .video-background {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 56.25vw; /* 16:9 Aspect Ratio */
+            min-height: 100vh;
+            min-width: 177.77vh; /* 16:9 Aspect Ratio */
+            z-index: -1; /* Ensures it stays in the background */
+        }
+        .video-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            color: white;
+            z-index: 10; /* Ensures it is on top of the video background */
+        }
+        h2 {
+            font-size: 36px; /* Larger for name */
+            font-weight: 700; /* Bold for name */
+            margin: 0.5em 0;
+        }
+        h2.description {
+            font-size: 24px; /* Smaller for description */
+            font-weight: 400; /* Regular weight for description */
+        }
+        p {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 36px; /* Larger icons for better visibility */
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <iframe class="video-iframe"
+                src="https://www.youtube.com/embed/KeiZRuFZBbs?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=KeiZRuFZBbs&mute=1&background=1"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+        </iframe>
+    </div>
+    <div class="content">
+        <h2>Kelly Dales</h2>
+        <h2 class="description">Data, Digital & Direct Voter Contact</h2>
+        <p>kelly [at] kellydales [dot] com</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/kelly-dales-13b7a561" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.pond5.com/artist/secretlakemedia" target="_blank"><i class="fas fa-video"></i></a>
+        </div>
+    </div>
+</body>
+</html>
